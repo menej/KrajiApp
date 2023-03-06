@@ -91,6 +91,7 @@ public class HelloController implements Initializable {
 
     public void clearStatus(ActionEvent actionEvent) {
         status.setText("Status: ");
+
     }
 
     public void exitApp(ActionEvent actionEvent) {
