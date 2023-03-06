@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fri.project.kraji.HelloController">
+   <top>
+      <BorderPane BorderPane.alignment="CENTER">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu text="_Datoteka">
+                  <items>
+                    <MenuItem onAction="#openDocument" text="_Odpri">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="O" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem onAction="#clearStatus" text="_Pobriši">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="C" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem onAction="#exitApp" text="_Izhod">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="Q" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                  </items>
+                </Menu>
+                <Menu text="_Izbire1">
+                  <items>
+                    <MenuItem fx:id="eItem1" onAction="#updateStatus" text="Izbire1 _E" />
+                        <MenuItem fx:id="nItem1" onAction="#updateStatus" text="Izbire1 _N" />
+                        <MenuItem fx:id="eItem2" onAction="#updateStatus" text="Izbire1 _E" />
+                        <MenuItem fx:id="jItem1" onAction="#updateStatus" text="Izbire1 _J" />
+                  </items>
+                </Menu>
+                <Menu text="_Izbire2">
+                  <items>
+                        <MenuItem fx:id="mItem1" onAction="#updateStatus" text="Izbire2 _M" />
+                    <MenuItem fx:id="aItem1" onAction="#updateStatus" text="Izbire2 _A" />
+                        <MenuItem fx:id="sItem1" onAction="#updateStatus" text="Izbire2 _S" />
+                        <MenuItem fx:id="tItem1" onAction="#updateStatus" text="Izbire2 _T" />
+                        <MenuItem fx:id="nItem2" onAction="#updateStatus" text="Izbire2 _N" />
+                        <MenuItem fx:id="aItem2" onAction="#updateStatus" text="Izbire2 _A" />
+                        <MenuItem fx:id="kItem1" onAction="#updateStatus" text="Izbire2 _K" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="_Pomoč">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <bottom>
+            <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <items>
+                <Button fx:id="eItem3" mnemonicParsing="false" onAction="#updateStatus" text="I1 E">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="nItem3" mnemonicParsing="false" onAction="#updateStatus" text="I1 N">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="eItem4" mnemonicParsing="false" onAction="#updateStatus" text="I1 E">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="jItem2" mnemonicParsing="false" onAction="#updateStatus" text="I1 J">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="mItem2" mnemonicParsing="false" onAction="#updateStatus" text="I2 M">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="aItem3" mnemonicParsing="false" onAction="#updateStatus" text="I2 A">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="sItem2" mnemonicParsing="false" onAction="#updateStatus" text="I2 S">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="tItem2" mnemonicParsing="false" onAction="#updateStatus" text="I2 T">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="nItem4" mnemonicParsing="false" onAction="#updateStatus" text="I2 N">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="aItem4" mnemonicParsing="false" onAction="#updateStatus" text="I2 A">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+                  <Button fx:id="kItem2" mnemonicParsing="false" onAction="#updateStatus" text="I2 K">
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding></Button>
+              </items>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </ToolBar>
+         </bottom>
+      </BorderPane>
+   </top>
+   <bottom>
+      <BorderPane style="-fx-border-color: gray;" BorderPane.alignment="CENTER">
+         <bottom>
+            <Label fx:id="status" text="Status: " BorderPane.alignment="CENTER_LEFT">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+         </bottom>
+         <top>
+            <Label fx:id="message" text="Dobrodošli!" BorderPane.alignment="CENTER_LEFT">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </Label>
+         </top>
+      </BorderPane>
+   </bottom>
+   <center>
+      <GridPane maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="238.3999755859375" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="362.40002441406244" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="actionAdd" mnemonicParsing="false" selected="true" text="Dodaj">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="action" />
+                     </toggleGroup>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding></RadioButton>
+                  <RadioButton fx:id="actionDeleteFirst" mnemonicParsing="false" text="Odstrani prvega" toggleGroup="$action">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding></RadioButton>
+                  <RadioButton fx:id="actionDeleteSelected" mnemonicParsing="false" text="Odstrani izbranega" toggleGroup="$action" />
+               </children>
+            </HBox>
+            <TextField fx:id="userCity" maxWidth="1.7976931348623157E308" prefHeight="26.0" promptText="Vnesi kraj" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></TextField>
+            <Label text="Vnesi besedilo:" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin></Label>
+            <ComboBox fx:id="selectedCity" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="491.0" promptText="Kraj prebivališča" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </GridPane.margin></ComboBox>
+            <CheckBox fx:id="forbidDuplicates" mnemonicParsing="false" text="Prepovej dvojnike" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin></CheckBox>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#initiateAction" text="Izvedi izbrano akcijo" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Button>
+            <Spinner fx:id="spinnerCityIndex" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin></Spinner>
+            <Label text="Izberi kraj po indeksu:" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin></Label>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
