@@ -27,14 +27,14 @@ public class HelloController implements Initializable {
 
 
     public void updateStatus(ActionEvent actionEvent) {
-        char letter;
-        if (actionEvent.getSource().getClass().toString().contains("MenuItem")) {
-            MenuItem menuItem = (MenuItem) actionEvent.getTarget();
-            letter = Character.toUpperCase(menuItem.getId().charAt(0));
-        } else {
-            Button button = (Button) actionEvent.getTarget();
-            letter = Character.toUpperCase(button.getId().charAt(0));
-        }
+        String buttonText;
+        if (actionEvent.getSource().getClass().toString().endsWith("MenuItem"))
+            buttonText = ((MenuItem) actionEvent.getSource()).getText();
+        else
+            buttonText = ((Button) actionEvent.getSource()).getText();
+
+        char letter = buttonText.charAt(buttonText.length() - 1);
+
         status.setText(status.getText() + letter);
     }
 

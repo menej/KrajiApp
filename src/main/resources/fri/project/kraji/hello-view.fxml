@@ -48,21 +48,21 @@
                 </Menu>
                 <Menu text="_Izbire1">
                   <items>
-                    <MenuItem fx:id="eItem1" onAction="#updateStatus" text="Izbire1 _E" />
-                        <MenuItem fx:id="nItem1" onAction="#updateStatus" text="Izbire1 _N" />
-                        <MenuItem fx:id="eItem2" onAction="#updateStatus" text="Izbire1 _E" />
-                        <MenuItem fx:id="jItem1" onAction="#updateStatus" text="Izbire1 _J" />
+                    <MenuItem onAction="#updateStatus" text="Izbire1 _E" />
+                        <MenuItem onAction="#updateStatus" text="Izbire1 _N" />
+                        <MenuItem onAction="#updateStatus" text="Izbire1 _E" />
+                        <MenuItem onAction="#updateStatus" text="Izbire1 _J" />
                   </items>
                 </Menu>
                 <Menu text="_Izbire2">
                   <items>
-                        <MenuItem fx:id="mItem1" onAction="#updateStatus" text="Izbire2 _M" />
-                    <MenuItem fx:id="aItem1" onAction="#updateStatus" text="Izbire2 _A" />
-                        <MenuItem fx:id="sItem1" onAction="#updateStatus" text="Izbire2 _S" />
-                        <MenuItem fx:id="tItem1" onAction="#updateStatus" text="Izbire2 _T" />
-                        <MenuItem fx:id="nItem2" onAction="#updateStatus" text="Izbire2 _N" />
-                        <MenuItem fx:id="aItem2" onAction="#updateStatus" text="Izbire2 _A" />
-                        <MenuItem fx:id="kItem1" onAction="#updateStatus" text="Izbire2 _K" />
+                        <MenuItem onAction="#updateStatus" text="Izbire2 _M" />
+                    <MenuItem onAction="#updateStatus" text="Izbire2 _A" />
+                        <MenuItem onAction="#updateStatus" text="Izbire2 _S" />
+                        <MenuItem onAction="#updateStatus" text="Izbire2 _T" />
+                        <MenuItem onAction="#updateStatus" text="Izbire2 _N" />
+                        <MenuItem onAction="#updateStatus" text="Izbire2 _A" />
+                        <MenuItem onAction="#updateStatus" text="Izbire2 _K" />
                   </items>
                 </Menu>
                   <Menu mnemonicParsing="false" text="_Pomoč">
@@ -76,47 +76,47 @@
          <bottom>
             <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
               <items>
-                <Button fx:id="eItem3" mnemonicParsing="false" onAction="#updateStatus" text="I1 E">
+                <Button mnemonicParsing="false" onAction="#updateStatus" text="I1 E">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
-                  <Button fx:id="nItem3" mnemonicParsing="false" onAction="#updateStatus" text="I1 N">
+                  <Button mnemonicParsing="false" onAction="#updateStatus" text="I1 N">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
-                  <Button fx:id="eItem4" mnemonicParsing="false" onAction="#updateStatus" text="I1 E">
+                  <Button mnemonicParsing="false" onAction="#updateStatus" text="I1 E">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
-                  <Button fx:id="jItem2" mnemonicParsing="false" onAction="#updateStatus" text="I1 J">
+                  <Button mnemonicParsing="false" onAction="#updateStatus" text="I1 J">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
-                  <Button fx:id="mItem2" mnemonicParsing="false" onAction="#updateStatus" text="I2 M">
+                  <Button mnemonicParsing="false" onAction="#updateStatus" text="I2 M">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
-                  <Button fx:id="aItem3" mnemonicParsing="false" onAction="#updateStatus" text="I2 A">
+                  <Button mnemonicParsing="false" onAction="#updateStatus" text="I2 A">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
-                  <Button fx:id="sItem2" mnemonicParsing="false" onAction="#updateStatus" text="I2 S">
+                  <Button mnemonicParsing="false" onAction="#updateStatus" text="I2 S">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
-                  <Button fx:id="tItem2" mnemonicParsing="false" onAction="#updateStatus" text="I2 T">
+                  <Button mnemonicParsing="false" onAction="#updateStatus" text="I2 T">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
-                  <Button fx:id="nItem4" mnemonicParsing="false" onAction="#updateStatus" text="I2 N">
+                  <Button mnemonicParsing="false" onAction="#updateStatus" text="I2 N">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
-                  <Button fx:id="aItem4" mnemonicParsing="false" onAction="#updateStatus" text="I2 A">
+                  <Button mnemonicParsing="false" onAction="#updateStatus" text="I2 A">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
-                  <Button fx:id="kItem2" mnemonicParsing="false" onAction="#updateStatus" text="I2 K">
+                  <Button mnemonicParsing="false" onAction="#updateStatus" text="I2 K">
                      <padding>
                         <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                      </padding></Button>
