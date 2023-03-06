@@ -65,11 +65,7 @@
                         <MenuItem onAction="#updateStatus" text="Izbire2 _K" />
                   </items>
                 </Menu>
-                  <Menu mnemonicParsing="false" text="_Pomoč">
-                    <items>
-                      <MenuItem mnemonicParsing="false" text="Action 1" />
-                    </items>
-                  </Menu>
+                  <Menu mnemonicParsing="false" text="_Pomoč" />
               </menus>
             </MenuBar>
          </top>
@@ -129,7 +125,7 @@
       </BorderPane>
    </top>
    <bottom>
-      <BorderPane style="-fx-border-color: gray;" BorderPane.alignment="CENTER">
+      <BorderPane style="-fx-border-color: gray; -fx-border-width: 0.5 0 0;" BorderPane.alignment="CENTER">
          <bottom>
             <Label fx:id="status" text="Status: " BorderPane.alignment="CENTER_LEFT">
                <BorderPane.margin>
@@ -143,7 +139,7 @@
          <top>
             <Label fx:id="message" text="Dobrodošli!" BorderPane.alignment="CENTER_LEFT">
                <BorderPane.margin>
-                  <Insets bottom="20.0" left="20.0" />
+                  <Insets bottom="20.0" left="20.0" top="10.0" />
                </BorderPane.margin>
                <font>
                   <Font name="Arial" size="16.0" />
@@ -177,12 +173,21 @@
                      </opaqueInsets>
                      <padding>
                         <Insets right="20.0" />
-                     </padding></RadioButton>
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font></RadioButton>
                   <RadioButton fx:id="actionDeleteFirst" mnemonicParsing="false" text="Odstrani prvega" toggleGroup="$action">
                      <padding>
                         <Insets right="20.0" />
-                     </padding></RadioButton>
-                  <RadioButton fx:id="actionDeleteSelected" mnemonicParsing="false" text="Odstrani izbranega" toggleGroup="$action" />
+                     </padding>
+                     <font>
+                        <Font size="13.0" />
+                     </font></RadioButton>
+                  <RadioButton fx:id="actionDeleteSelected" mnemonicParsing="false" text="Odstrani izbranega" toggleGroup="$action">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font></RadioButton>
                </children>
             </HBox>
             <TextField fx:id="userCity" maxWidth="1.7976931348623157E308" prefHeight="26.0" promptText="Vnesi kraj" GridPane.columnIndex="1">
@@ -203,7 +208,10 @@
             <CheckBox fx:id="forbidDuplicates" mnemonicParsing="false" text="Prepovej dvojnike" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="20.0" />
-               </GridPane.margin></CheckBox>
+               </GridPane.margin>
+               <font>
+                  <Font size="13.0" />
+               </font></CheckBox>
             <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#initiateAction" text="Izvedi izbrano akcijo" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets right="20.0" />
